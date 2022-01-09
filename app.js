@@ -63,7 +63,7 @@ passport.serializeUser(function(user, done) {
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: "https://depression-hv.herokuapp.com/auth/google/secrets"
+    callbackURL: "https://depression-hv.herokuapp.com/auth/google"
   },
   function(accessToken, refreshToken, profile, cb) {
       console.log(profile);
